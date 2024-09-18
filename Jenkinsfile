@@ -24,13 +24,13 @@ pipeline {
             post {
                 success {
                     emailext to: 'lukelakshan1997@gmail.com',
-                             subject: "Unit and and Integration Testing Stage Results",
+                             subject: "Unit and Integration Testing Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
                 }
                 failure {
                     emailext to: 'lukelakshan1997@gmail.com',
-                             subject: "Unit and and Integration Testing Stage Results",
+                             subject: "Unit and Integration Testing Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
                 }
@@ -41,7 +41,6 @@ pipeline {
                 echo "Check the quality of the code"
                 echo "Tools: SonarQube"
             }
-       
         }
         stage('Security Scan') {
             steps {
@@ -95,6 +94,6 @@ pipeline {
                 echo "Deploy the code to the production environment specified by the environment variable: ${env.PRODUCTION_ENVIRONMENT}"
                 echo "Tools: AWS CodeDeploy, Ansible, Kubernetes, or Docker"
             }
-        }
-    }
+        }
+    }
 }
