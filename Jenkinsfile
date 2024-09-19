@@ -23,13 +23,13 @@ pipeline {
             }
             post {
                 success {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Unit and Integration Testing Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
                 }
                 failure {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Unit and Integration Testing Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
@@ -49,13 +49,13 @@ pipeline {
             }
             post {
                 success {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Security Scan Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
                 }
                 failure {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Security Scan Stage Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
@@ -76,13 +76,13 @@ pipeline {
             }
             post {
                 success {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Integration Tests on Staging Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
                 }
                 failure {
-                    emailext to: 'lukelakshan1997@gmail.com',
+                    emailext to: 'pulunuwanyasisuru@gmail.com',
                              subject: "Integration Tests on Staging Results",
                              body: "Job status: ${currentBuild.result}.",
                              attachLog: true
